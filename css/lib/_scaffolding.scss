@@ -1,0 +1,18 @@
+body {
+	font-size:20px;
+	line-height:1.55;
+	background:$bodyBackground;
+	color:#333;
+	font-family:$sans;
+	padding:1em;
+}
+
+a {
+	text-decoration:none;
+	color:darken($red,15%);
+}
+
+hr {
+	margin:2.5em 0 1em;
+	border:0.05em solid darken($bodyBackground,20%);
+}
