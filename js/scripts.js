@@ -7,6 +7,8 @@ function divideChar() {
   $(".content").html(charsDiv);
 }
 
+
+
 var charMax = 66;
 var fSize = $("#fontSize").val();
 var cWidth = $("#cWidth").val();
@@ -16,6 +18,7 @@ divideChar();
 $("span:nth-child(" + charMax + ")").addClass("bing");
 $("#cWidth").val($(".content").outerWidth());
 
+/*
 $("#charMax").keyup(function(){
   var charMax = $("#charMax").val();
   $("span").removeClass("bing");
@@ -24,6 +27,20 @@ $("#charMax").keyup(function(){
   $("span").removeClass("muted");
   $(".go").removeClass("active");
 });
+*/
+
+var val = $("#charMax").val();
+$("#rangeText").text(val);
+
+function updateTextInput(val) {
+  $("#rangeText").text(val);
+
+  $("span").removeClass("bing");
+  $("span:nth-child(" + val + ")").addClass("bing");
+  $(".content").css("width","auto");
+  $("span").removeClass("muted");
+  $(".go").removeClass("active");
+}
 
 $(".content").keyup(function(){
   var charMax = $("#charMax").val();

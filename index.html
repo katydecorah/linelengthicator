@@ -11,15 +11,12 @@
   </head>
   <body>
     <div class='container'>
-      <h1>
-        Line Length-icator
-        <small>Your readabil-a-buddy!</small>
-      </h1>
+      <h1>Line Length-icator</h1>
       <div class='content' contentEditable>I'm always trying to find the best line length for my paragraphs, headings, and other text. I built this to avoid manually counting characters (woof). Paste some text right in here! &#9786;</div>
       <div class='metrics'>
         <label for='charMax'>
           Target Line Length:
-          <input id='charMax' type='text' value='66'>
+          <input id='charMax' max='90' min='40' onchange='updateTextInput(this.value)' type='range' value='66'>
           characters
         </label>
         <label for='fontSize'>

@@ -13,6 +13,7 @@ input {
   font-weight:700;
   color:#333;
   text-align:center;
+  vertical-align:middle;
   &:focus{
     outline:$red auto 0.1em;
   }
