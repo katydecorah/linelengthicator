@@ -64,9 +64,9 @@
 }
 
 .hello {
-  margin:10em 0 0;
-  font-size:0.7em;
+  margin:8em 0 1em;
   a {
-    font-family:$sans;
+    font-family:$serif;
   }
+  p { margin-bottom:1em;}
 }
