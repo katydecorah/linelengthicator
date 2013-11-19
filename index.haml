@@ -2,33 +2,40 @@
 %html
   %head
     %meta{'charset'=>'utf-8'}
-    %title Line Length-icator
     %meta{'http-equiv'=>'X-UA-Compatible','content'=>'IE=edge,chrome=1'}
-    %meta{'name'=>'viewport','content'=>'width=device-width'}
+    %title Line Length-icator
+    %meta{'name'=>'descripition','content'=>'Trying to find the best line length for your text? Paste some text into the Line Length-icator and let it do the rest.'}
+    %meta{'name'=>'viewport','content'=>'width=device-width, initial-scale=1'}
+    %meta{'name'=>'twitter:card', 'content'=>'summary'}
+    %meta{'name'=>'twitter:site', 'content'=>'katydecorah'}
+    %meta{'name'=>'twitter:creator', 'content'=>'katydecorah'}
+    %meta{'name'=>'twitter:title', 'content'=>'Line Length-icator'}
+    %meta{'name'=>'twitter:description', 'content'=>'Trying to find the best line length for your text? Paste some text into the Line Length-icator and let it do the rest.'}
+    %meta{'name'=>'twitter:image:src', 'content'=>'http://codepen.io/katydecorah/pen/cufzB/image/small.png'}
     %link{'rel'=>'stylesheet','href'=>'css/styles.css'}
-    %link{'rel'=>'stylesheet','href'=>'http://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css'}
+    %link{'rel'=>'stylesheet','href'=>'http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css'}
     %link{'href'=>'http://fonts.googleapis.com/css?family=Merriweather:400,900,400italic,700|Merriweather+Sans:400,700','rel'=>'stylesheet','type'=>'text/css'}
   %body
     .container
       %h1 Line Length-icator
-      .content(contentEditable) I'm always trying to find the best line length for my paragraphs, headings, and other text. I built this to avoid manually counting characters (woof). Paste some text right in here! &#9786;
+      .content(contentEditable) Need to find the best line length for your text? Paste your text here and then adjust below. The arrow will let you know about where your line should break. Hit visualize to see that line length in action!
       .metrics
-        %label{:for => "charMax"}
+        %label{:for => 'charMax'}
           Target Line Length:
-          %input#charMax{:type => "range", :value => "66", :min => "40", :max => "90", :onchange => "updateTextInput(this.value)"}
+          %input#charMax{:type => 'range', :value => '66', :min => '40', :max => '90', :onchange => 'updateTextInput(this.value)'}
           %span#rangeText
           characters
-        %label{:for => "fontSize"}
+        %label{:for => 'fontSize'}
           Font Size:
-          %input#fontSize{:type => "text", :value => "20"}
+          %input#fontSize{:type => 'text', :value => '20'}
           px
-        %label{:for => "cWidth"}
+        %label{:for => 'cWidth'}
           Width:
-          %input#cWidth{:type => "text"}(disabled)
+          %input#cWidth{:type => 'text'}(disabled)
           px
         %button#break Break Word
       %button.go
-        %i.icon-magic
+        %i.fa.fa-magic
         Visualize
       .hello
         Made by
