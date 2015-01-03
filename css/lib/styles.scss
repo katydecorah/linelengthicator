@@ -1,11 +1,9 @@
-
-@import "variables";
-@import "mixins";
-
-@import "scaffolding";
-@import "type";
-
-@import "layouts";
-@import "forms";
-
-@import "animations";
+@import
+"reset",
+"variables",
+"mixins",
+"scaffolding",
+"type",
+"layouts",
+"forms",
+"animations";

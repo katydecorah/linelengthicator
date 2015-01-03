@@ -1,7 +1,7 @@
 name: Line Length-icator
-url: http://katydecorah.com/linelengthicator/
-#url: http://127.0.0.1:4000/
+baseurl: /linelengthicator
+url: http://katydecorah.com
 description: Trying to find the best line length for your text? Paste some text into the Line Length-icator and let it do the rest.
 
 jquery: 2.1.3
-fa: 4.0.3
+fa: 4.2.0
