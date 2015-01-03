@@ -1,21 +1,13 @@
-h1, h2 {
-  font-weight:900;
-  margin:1em 0 0.25em;
-  font-family:$serif;
-}
+p {margin-bottom: 1.3em;}
+
 h1 {
-  font-size:2.5em;
-  small {
-    font-weight:400;
-    font-size:0.4em;
-    font-style:italic;
-    color:lighten(#333,10%);
-  }
-}
-h2 {
-  font-size:2em;
+  margin: 1.414em 0 0.5em;
+  font-weight: 900;
+  font-family: $serif;
+  line-height: 1.2;
+  font-size: 3.157em;
 }
 
-.break {
-  word-break:break-all;
-}
+small, .font_small {font-size: 0.75em;}
+
+.break { word-break: break-all;}
