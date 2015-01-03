@@ -9,7 +9,7 @@
   background: lighten($bodyBackground,1%);
   padding: 2em;
   position: relative;
-  margin: 2em 0 0;
+  margin-top: 1em;
   border: 0.07em solid darken($bodyBackground,10%);
   transition: width 0.5s ease;
   resize: both;
@@ -67,8 +67,6 @@
 
 .hello {
   margin: 8em 0 1em;
-  a {
-    font-family: $serif;
-  }
+  a { font-family: $serif; }
   p { margin-bottom: 1em;}
 }
