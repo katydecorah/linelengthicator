@@ -1,6 +1,6 @@
 name: Line Length-icator
-# url: http://katydecorah.com/linelengthicator/
-url: http://127.0.0.1:4000/
+url: http://katydecorah.com/linelengthicator/
+#url: http://127.0.0.1:4000/
 description: Trying to find the best line length for your text? Paste some text into the Line Length-icator and let it do the rest.
 
 jquery: 2.1.3
