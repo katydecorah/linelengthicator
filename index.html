@@ -1,77 +1,20 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset='utf-8'>
-<meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
-<title>Line Length-icator</title>
-<meta content='Trying to find the best line length for your text? Paste some text into the Line Length-icator and let it do the rest.' name='descripition'>
-<meta content='width=device-width, initial-scale=1' name='viewport'>
-<meta content='summary' name='twitter:card'>
-<meta content='katydecorah' name='twitter:site'>
-<meta content='katydecorah' name='twitter:creator'>
-<meta content='Line Length-icator' name='twitter:title'>
-<meta content='Trying to find the best line length for your text? Paste some text into the Line Length-icator and let it do the rest.' name='twitter:description'>
-<meta content='http://codepen.io/katydecorah/pen/cufzB/image/small.png' name='twitter:image:src'>
-<link href='css/styles.css' rel='stylesheet'>
-<link href='http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css' rel='stylesheet'>
-<link href='http://fonts.googleapis.com/css?family=Merriweather:400,900,400italic,700|Merriweather+Sans:400,700' rel='stylesheet' type='text/css'>
-</head>
-<body>
+---
+layout: default
+---
 <div class='container'>
 <h1>Line Length-icator</h1>
 <div class='content' contentEditable>Need to find the best line length for your text? Paste your text here and then adjust below. The arrow will show you the best spot to break the line. Hit visualize to see that line length in action!</div>
 <div class='metrics'>
-<label for='charMax'>
-Target Line Length:
-<input id='charMax' max='90' min='40' onchange='updateTextInput(this.value)' type='range' value='66'>
-<span id='rangeText'></span>
-characters
+<label for='charMax'>Target Line Length: <input id='charMax' max='90' min='40' onchange='updateTextInput(this.value)' type='range' value='66'><span id='rangeText'></span> characters
 </label>
-<label for='fontSize'>
-Font Size:
-<input id='fontSize' type='text' value='20'>
-px
-</label>
-<label for='cWidth'>
-Width:
-<input disabled id='cWidth' type='text'>
-px
-</label>
+<label for='fontSize'>Font Size: <input id='fontSize' type='number' value='20'>px</label>
+<label for='cWidth'>Width: <input disabled id='cWidth' type='text'>px</label>
 <button id='break'>Break Word</button>
 </div>
-<button class='go'>
-<i class='fa fa-magic'></i>
-Visualize
-</button>
+<button class='go'><i class='fa fa-magic'></i>Visualize</button>
 <div class='hello'>
-<p>
-<a href='https://twitter.com/share?url=http%3A%2F%2Fkatydecorah.com%2Flinelengthicator&amp;text=Find+target+line+length+with+Line+Length%2Dictator&amp;via=katydecorah' target='_blank'>
-<i class='fa fa-twitter-square'></i>
-Share
-</a>
-|
-<a href='http://www.twitter.com/katydecorah'>
-@katydecorah
-</a>
-</p>
-<p>
-References:
-<a href='http://webtypography.net/Rhythm_and_Proportion/Horizontal_Motion/2.1.2/'>The Elements of Typographic Style Applied to the Web</a>
-|
-<a href='http://trentwalton.com/2012/06/19/fluid-type/'>Fluid Type</a>
-</p>
+<p><a href='https://twitter.com/share?url=http%3A%2F%2Fkatydecorah.com%2Flinelengthicator&amp;text=Find+target+line+length+with+Line+Length%2Dictator&amp;via=katydecorah' target='_blank'>
+<i class='fa fa-twitter-square'></i> Share </a> | <a href='http://www.twitter.com/katydecorah'> @katydecorah </a> </p>
+<p> References: <a href='http://webtypography.net/Rhythm_and_Proportion/Horizontal_Motion/2.1.2/'>The Elements of Typographic Style Applied to the Web</a> | <a href='http://trentwalton.com/2012/06/19/fluid-type/'>Fluid Type</a> </p>
 </div>
 </div>
-<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js'></script>
-<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery-resize/1.1/jquery.ba-resize.min.js'></script>
-<script src='js/scripts.min.js'></script>
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-ga('create', 'UA-41534254-1', 'katydecorah.com');
-ga('send', 'pageview');
-</script>
-</body>
-</html>
