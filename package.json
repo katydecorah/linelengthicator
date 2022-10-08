@@ -1,6 +1,9 @@
 {
   "name": "linelengthicator",
   "version": "0.1.0",
+  "scripts": {
+    "start": "bundle exec jekyll serve"
+  },
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-autoprefixer": "^2.0.0",

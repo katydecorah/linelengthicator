@@ -5,3 +5,10 @@ description: Trying to find the best line length for your text? Paste some text 
 
 jquery: 2.1.3
 fa: 4.2.0
+
+exclude:
+- node_modules
+- Gemfile
+- Gemfile.lock
+- package.json
+- package-lock.json
