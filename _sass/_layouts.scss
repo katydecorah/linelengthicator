@@ -1,4 +1,6 @@
-* {box-sizing: border-box;}
+* {
+  box-sizing: border-box;
+}
 
 .container {
   max-width: 50em;
@@ -6,20 +8,20 @@
 }
 
 .content {
-  background: lighten($bodyBackground,1%);
+  background: lighten($bodyBackground, 1%);
   padding: 2em;
   position: relative;
   margin-top: 1em;
-  border: 0.07em solid darken($bodyBackground,10%);
+  border: 0.07em solid darken($bodyBackground, 10%);
   transition: width 0.5s ease;
   resize: both;
   overflow: auto;
   font-size: 1em;
 
-  &:focus{
+  &:focus {
     outline: $red auto 0.1em;
     &:before {
-      color: transparentize($purple,0.25);
+      color: transparentize($purple, 0.25);
     }
   }
   &:before {
@@ -28,7 +30,7 @@
     top: 0.2em;
     right: 0.1em;
     background: $bodyBackground;
-    color: darken($bodyBackground,15%);
+    color: darken($bodyBackground, 15%);
     line-height: 1;
     font-family: FontAwesome;
     font-weight: normal;
@@ -39,11 +41,13 @@
 }
 
 .bing {
-  background: transparentize($red,0.65);
+  background: transparentize($red, 0.65);
   position: relative;
   &.muted {
-    background: transparentize($red,0.75);
-    &:before {content: "";}
+    background: transparentize($red, 0.75);
+    &:before {
+      content: "";
+    }
   }
   &:before {
     animation: hoppy 0.2s 3 ease-in alternate;
@@ -57,7 +61,7 @@
     top: -1.25em;
     left: 0;
     right: 0;
-    color: transparentize($red,0.25);
+    color: transparentize($red, 0.25);
     display: block;
     font-size: 0.7em;
     text-align: center;
@@ -68,6 +72,10 @@
 .hello {
   @extend small;
   margin: 3em 0 1em;
-  a { font-family: $serif; }
-  p { margin-bottom: 1em;}
+  a {
+    font-family: $serif;
+  }
+  p {
+    margin-bottom: 1em;
+  }
 }

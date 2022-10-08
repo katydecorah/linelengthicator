@@ -1,20 +1,55 @@
 ---
 layout: default
 ---
-<div class='container'>
-<h1>Line Length-icator</h1>
-<div class='content' contentEditable>Need to find the best line length for your text? Paste your text here and then adjust below. The arrow will show you the best spot to break the line. Hit visualize to see that line length in action!</div>
-<div class='metrics'>
-<label for='charMax'>Target Line Length: <input id='charMax' max='90' min='40' onchange='updateTextInput(this.value)' type='range' value='66'><span id='rangeText'></span> characters
-</label>
-<label for='fontSize'>Font Size: <input id='fontSize' type='number' value='20'>px</label>
-<label for='cWidth'>Width: <input disabled id='cWidth' type='text'>px</label>
-<button id='break'>Break Word</button>
-</div>
-<button class='go'><i class='fa fa-magic'></i> Visualize</button>
-<div class='hello'>
-<p><a href='https://twitter.com/share?url=http%3A%2F%2Fkatydecorah.com%2Flinelengthicator&amp;text=Find+target+line+length+with+Line+Length%2Dictator&amp;via=katydecorah' target='_blank'>
-<i class='fa fa-twitter-square'></i> Share </a> | <a href='http://www.twitter.com/katydecorah'> @katydecorah</a> | <a href='https://github.com/katydecorah/linelengthicator'><i class='fa fa-github'></i></a> </p>
-<p> References: <a href='http://webtypography.net/Rhythm_and_Proportion/Horizontal_Motion/2.1.2/'>The Elements of Typographic Style Applied to the Web</a> | <a href='http://trentwalton.com/2012/06/19/fluid-type/'>Fluid Type</a> </p>
-</div>
+
+<div class="container">
+  <h1>Line Length-icator</h1>
+  <div class="content" contenteditable>
+    Need to find the best line length for your text? Paste your text here and
+    then adjust below. The arrow will show you the best spot to break the line.
+    Hit visualize to see that line length in action!
+  </div>
+  <div class="metrics">
+    <label for="charMax"
+      >Target Line Length:
+      <input
+        id="charMax"
+        max="90"
+        min="40"
+        onchange="updateTextInput(this.value)"
+        type="range"
+        value="66"
+      /><span id="rangeText"></span> characters
+    </label>
+    <label for="fontSize"
+      >Font Size: <input id="fontSize" type="number" value="20" />px</label
+    >
+    <label for="cWidth"
+      >Width: <input disabled id="cWidth" type="text" />px</label
+    >
+    <button id="break">Break Word</button>
+  </div>
+  <button class="go"><i class="fa fa-magic"></i> Visualize</button>
+  <div class="hello">
+    <p>
+      <a
+        href="https://twitter.com/share?url=http%3A%2F%2Fkatydecorah.com%2Flinelengthicator&amp;text=Find+target+line+length+with+Line+Length%2Dictator&amp;via=katydecorah"
+        target="_blank"
+      >
+        <i class="fa fa-twitter-square"></i> Share
+      </a>
+      | <a href="http://www.twitter.com/katydecorah"> @katydecorah</a> |
+      <a href="https://github.com/katydecorah/linelengthicator"
+        ><i class="fa fa-github"></i
+      ></a>
+    </p>
+    <p>
+      References:
+      <a
+        href="http://webtypography.net/Rhythm_and_Proportion/Horizontal_Motion/2.1.2/"
+        >The Elements of Typographic Style Applied to the Web</a
+      >
+      | <a href="http://trentwalton.com/2012/06/19/fluid-type/">Fluid Type</a>
+    </p>
+  </div>
 </div>
